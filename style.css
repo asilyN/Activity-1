@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(1.png) ;
+    padding: 10px;
+}
+.to-do{
+    width: 100%;
+    max-width: 500px;
+    background:transparent;
+    outline: 2px solid #dcdc8d;
+    box-shadow: 2px 2px 5px 10px rgba(19, 82, 24, 0.1);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+
+}
+.to-do h1{
+    color: #615e10;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-family : "Pacifico", cursive;
+    font-size: 350%;
+}
+.label{
+    color: #b5c8c2;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: fantasy;
+}
+input{
+    flex: 1;
+    outline: auto 1px #b4b285;
+    border-radius: 5px;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+.add-btn{
+    border: none;
+    outline: none;
+    padding: 12px 30px;
+    background: #cfb14f;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-left: 10px;
+}
+.delete-btn{
+    border: none;
+    outline: none;
+    padding: 10px 13px;
+    background: #bda758;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+#task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-width: 400px;
+    margin: 0 auto; 
+
+}
+#task-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+#task-list input[type="checkbox"] {
+    display: none;
+}
+.checkbox-image {
+    width: 20px; 
+    height: 20px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    position: relative;
+    margin-right: 10px;
+}
+#task-list input[type="checkbox"]:checked + label .checkbox-image {
+    content: url('checked.png'); 
+}
+span{
+    word-wrap: break-word;
+    overflow-wrap:break-word;
+    max-width: 250px;
+}
