@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(2.png) ;
+    /* background: linear-gradient(135deg, #c8e9de, #9ed378ec); */
+    padding: 10px;
+}
+.to-do{
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    outline: px solid #aee8c0;
+    box-shadow: 2px 2px 5px 2px rgba(19, 82, 24, 0.1);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+
+}
+.to-do h1{
+    color: #17684d;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family:Papyrus, fantasy;
+    
+}
+.label{
+    color: #17684d;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: fantasy;
+}
+input{
+    flex: 1;
+    border: 0.5px solid #6cc476;
+    border-radius: 5px;
+    outline: 1px solid #ccc;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+.add-btn{
+    border: none;
+    outline: none;
+    padding: 12px 30px;
+    background: #20906b;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-left: 10px;
+}
+.delete-btn{
+    border: none;
+    outline: none;
+    padding: 10px 13px;
+    background: #36cd8e;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.checbox{
+    margin-left: 50px;
+    padding: 10px 13px;
+}
+#task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-width: 400px;
+    margin: 0 auto; 
+
+}
+#task-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+#task-list input[type="checkbox"] {
+    display: none;
+}
+.checkbox-image {
+    width: 20px; 
+    height: 20px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    position: relative;
+}
+
+#task-list input[type="checkbox"]:checked + label .checkbox-image {
+    content: url('checked.png'); 
+}
